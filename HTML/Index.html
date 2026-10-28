@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="/CSS/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alcancía encapsulada</title>
+
+</head>
+<body>
+  <div class="containerapp"><main>
+  <h1>⛃ ʕ •⚇•ʔฅ         Mi alcancía</h1>
+  <p class="sub">El dinero está encapsulado: solo se cambia con los botones de la clase.</p>
+
+  <section class="card">
+    <p class="saldo" id="saldo">$0</p>
+  </section>
+
+  <section class="card">
+    <h2>Usar los botones permitidos</h2>
+    <label for="cantidad">Cantidad</label>
+    <input id="cantidad" type="number" min="1" value="1000" inputmode="numeric">
+    <div class="fila">
+      <button id="btnGuardar">Guardar</button>
+      <button id="btnSacar">Sacar</button>
+    </div>
+  </section>
+
+  <section id="trampa-card">
+    <h2>Hacer trampa</h2>
+    <p class="nota">Intenta poner $1.000.000 directo, sin pasar por la clase.</p>
+    <div class="fila">
+      <button id="btnTrampa" class="trampa">Intentar trampa</button>
+    </div>
+  </section>
+
+  <p id="mensaje" role="status" aria-live="polite"></p>
+</main>
+
+</div>
+<script src="/JS/main.js"></script>
+</body>
+</html>
